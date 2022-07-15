@@ -147,6 +147,46 @@ router.post('/corporate-inquiry', (req, res) => {
     res.status(200).json({message: "response data corporate inquiry"});
 })
 
+router.post('/management-data', (req, res) => {
+    const {
+        CIX_BOD_BOD_NM,
+        CIX_BOD_BOD_POS,
+        CIX_BOD_BOD_ID_NO,
+        CIX_BOD_BOD_ID_TP,
+        CIX_BOD_BOD_END_ID_DT,
+        CIX_BOD_NPWP,
+        CIX_BOD_BOD_CIX_NO,
+        CIX_BOD_GENDER,
+        CIX_BOD_BOD_ADDRESS,
+        CIX_BOD_BOD_TOWN,
+        CIX_BOD_BOD_VILAGE,
+        CIX_BOD_BOD_DATI_II,
+        CIX_BOD_BOD_CITY_NM,
+        CIX_BOD_BOD_PROVINCE_CD,
+        CIX_BOD_BOD_PEP
+    } = req.body
+    const data = {
+        CIX_BOD_BOD_NM,
+        CIX_BOD_BOD_POS,
+        CIX_BOD_BOD_ID_NO,
+        CIX_BOD_BOD_ID_TP,
+        CIX_BOD_BOD_END_ID_DT,
+        CIX_BOD_NPWP,
+        CIX_BOD_BOD_CIX_NO,
+        CIX_BOD_GENDER,
+        CIX_BOD_BOD_ADDRESS,
+        CIX_BOD_BOD_TOWN,
+        CIX_BOD_BOD_VILAGE,
+        CIX_BOD_BOD_DATI_II,
+        CIX_BOD_BOD_CITY_NM,
+        CIX_BOD_BOD_PROVINCE_CD,
+        CIX_BOD_BOD_PEP
+    };
+    console.log(data, '<-----')
+
+    res.status(200).json({message: "response data"});
+})
+
 
 
 module.exports = router
