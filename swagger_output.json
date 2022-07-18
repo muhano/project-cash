@@ -392,49 +392,79 @@
                 "type": "object",
                 "properties": {
                   "CIX_BOD_BOD_NM": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Complete Name",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_POS": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Position Code",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_ID_NO": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "ID. Card",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_ID_TP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "ID Type",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_END_ID_DT": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "ID Expiry Date",
+                    "example": "string"
                   },
                   "CIX_BOD_NPWP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "No. NPWP",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_CIX_NO": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "CIF No",
+                    "example": "string"
                   },
                   "CIX_BOD_GENDER": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Gender / Category",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_ADDRESS": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Address",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_TOWN": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "County",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_VILAGE": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_DATI_II": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "District",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_CITY_NM": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "City Name",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_PROVINCE_CD": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Province",
+                    "example": "string"
                   },
                   "CIX_BOD_BOD_PEP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Watch List Y/N",
+                    "example": "string"
                   }
                 }
               }
@@ -459,52 +489,84 @@
                 "type": "object",
                 "properties": {
                   "CIX_SHLDR_STOCK_OWNER_NM": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Name",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_NOMINAL": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Nominal of Share",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_OWNERSHIP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Ownership(%)",
+                    "example": "string"
                   },
                   "CIX_SHLDR_RBA_SIGN1": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "HR Profile",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_ID_NO": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "No. ID",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_ID_TP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "ID Type",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_END_ID_DT": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "ID Expiry Date",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_CIX_NO": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "CIF Debitur",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_OWNER_TP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Ownership Type Code",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_GENDER": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Gender / Category",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_ADDRESS": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Address",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_TOWN": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "County",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_VILAGE": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "District",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_DATI_II": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "DATI II",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_CITY_NM": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "City Name",
+                    "example": "string"
                   },
                   "CIX_SHLDR_STOCK_PEP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Watch List Y/N",
+                    "example": "string"
                   }
                 }
               }
@@ -529,37 +591,59 @@
                 "type": "object",
                 "properties": {
                   "CIX_PIC_PIC_NM": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Complete Name",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_ID": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Identity Type",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_ID_NO": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "No Identity",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_END_ID_DT": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "ID Expiry Date",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_POB": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Place of Birth",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_DOB": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Date of Birth",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_ADDRESS": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Address",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_CTRY_CD": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Country",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_CTRY_YRDK_CD": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Yuridiksi Country",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_TIN": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "No. TIN",
+                    "example": "string"
                   },
                   "CIX_PIC_PIC_PEP": {
-                    "example": "any"
+                    "type": "string",
+                    "description": "Watch List Y/N",
+                    "example": "string"
                   }
                 }
               }
