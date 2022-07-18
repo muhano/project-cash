@@ -62,9 +62,10 @@ router.post('/individual-inquiry', (req, res) => {
         CIX_BASE_MOBILE_NO_2,
         CIX_BASE_MOBILE_NO_3,
         CIX_LRPT_REL_PARTY_CD};
-    console.log(data, '<-----')
+    // console.log(data, '<-----')
 
-    res.status(200).json({message: "response data"});
+    // res.status(200).json({message: "response data"});
+    res.status(200).json(data);
 })
 
 router.post('/corporate-inquiry', (req, res) => {
@@ -143,8 +144,8 @@ router.post('/corporate-inquiry', (req, res) => {
         CIX_LRPT_SITU_IUT_NO
     }
     // console.log(data.length, '<-----')
-    console.log(data, "<------");
-    res.status(200).json({message: "response data corporate inquiry"});
+    // console.log(data, "<------");
+    res.status(200).json(data);
 })
 
 router.post('/management-data', (req, res) => {
@@ -182,9 +183,9 @@ router.post('/management-data', (req, res) => {
         CIX_BOD_BOD_PROVINCE_CD,
         CIX_BOD_BOD_PEP
     };
-    console.log(data, '<-----')
+    // console.log(data, '<-----')
 
-    res.status(200).json({message: "response data"});
+    res.status(200).json(data);
 })
 
 router.post('/shareholder-data', (req, res) => {
@@ -224,9 +225,41 @@ router.post('/shareholder-data', (req, res) => {
         CIX_SHLDR_STOCK_CITY_NM,
         CIX_SHLDR_STOCK_PEP
     };
-    console.log(data, '<-----')
+    // console.log(data, '<-----')
 
-    res.status(200).json({message: "response data"});
+    res.status(200).json(data);
+})
+
+router.post('/controlling-person', (req, res) => {
+    const {
+        CIX_PIC_PIC_NM,
+        CIX_PIC_PIC_ID,
+        CIX_PIC_PIC_ID_NO,
+        CIX_PIC_PIC_END_ID_DT,
+        CIX_PIC_PIC_POB,
+        CIX_PIC_PIC_DOB,
+        CIX_PIC_PIC_ADDRESS,
+        CIX_PIC_PIC_CTRY_CD,
+        CIX_PIC_PIC_CTRY_YRDK_CD,
+        CIX_PIC_PIC_TIN,
+        CIX_PIC_PIC_PEP
+    } = req.body
+    const data = {
+        CIX_PIC_PIC_NM,
+        CIX_PIC_PIC_ID,
+        CIX_PIC_PIC_ID_NO,
+        CIX_PIC_PIC_END_ID_DT,
+        CIX_PIC_PIC_POB,
+        CIX_PIC_PIC_DOB,
+        CIX_PIC_PIC_ADDRESS,
+        CIX_PIC_PIC_CTRY_CD,
+        CIX_PIC_PIC_CTRY_YRDK_CD,
+        CIX_PIC_PIC_TIN,
+        CIX_PIC_PIC_PEP
+    };
+    // console.log(data, '<-----')
+
+    res.status(200).json(data);
 })
 
 
