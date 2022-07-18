@@ -6,9 +6,10 @@ router.get('/', (req, res) => {
 })
 
 router.post('/individual-inquiry', (req, res) => {
+    
     const {
-        CIX_BASE_CIX_NO, 
-        CIX_LRPT_STS, 
+        CIX_BASE_CIX_NO,
+        CIX_LRPT_STS,
         CIX_BASE_CIX_CD,
         CIX_BASE_CUST_HNM,
         CIX_BASE_ID_NO,
@@ -35,8 +36,9 @@ router.post('/individual-inquiry', (req, res) => {
         CIX_BASE_MOBILE_NO_3,
         CIX_LRPT_REL_PARTY_CD
     } = req.body
-    const data = {CIX_BASE_CIX_NO, 
-        CIX_LRPT_STS, 
+    const data = {
+        CIX_BASE_CIX_NO,
+        CIX_LRPT_STS,
         CIX_BASE_CIX_CD,
         CIX_BASE_CUST_HNM,
         CIX_BASE_ID_NO,
@@ -61,7 +63,8 @@ router.post('/individual-inquiry', (req, res) => {
         CIX_BASE_MOBILE_NO,
         CIX_BASE_MOBILE_NO_2,
         CIX_BASE_MOBILE_NO_3,
-        CIX_LRPT_REL_PARTY_CD};
+        CIX_LRPT_REL_PARTY_CD
+    };
     // console.log(data, '<-----')
 
     // res.status(200).json({message: "response data"});
@@ -70,8 +73,8 @@ router.post('/individual-inquiry', (req, res) => {
 
 router.post('/corporate-inquiry', (req, res) => {
     const {
-        CIX_BASE_CIX_NO, 
-        CIX_LRPT_STS, 
+        CIX_BASE_CIX_NO,
+        CIX_LRPT_STS,
         CIX_BASE_CUST_HNM,
         CIX_LRPT_NPWP,
         CIX_LRPT_UPJO_CD_ANTASENA,
@@ -107,8 +110,8 @@ router.post('/corporate-inquiry', (req, res) => {
         CIX_LRPT_SITU_IUT_NO
     } = req.body
     const data = {
-        CIX_BASE_CIX_NO, 
-        CIX_LRPT_STS, 
+        CIX_BASE_CIX_NO,
+        CIX_LRPT_STS,
         CIX_BASE_CUST_HNM,
         CIX_LRPT_NPWP,
         CIX_LRPT_UPJO_CD_ANTASENA,
@@ -257,11 +260,16 @@ router.post('/controlling-person', (req, res) => {
         CIX_PIC_PIC_TIN,
         CIX_PIC_PIC_PEP
     };
-    // console.log(data, '<-----')
 
     res.status(200).json(data);
 })
 
+router.post('/oauth2', (req, res) => {
+    const {grant_type} = req.body
+    const {Authorization} = req.headers
+    const data = {grant_type};
 
+    res.status(200).json(data);
+})
 
 module.exports = router
