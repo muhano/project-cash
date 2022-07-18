@@ -187,6 +187,48 @@ router.post('/management-data', (req, res) => {
     res.status(200).json({message: "response data"});
 })
 
+router.post('/shareholder-data', (req, res) => {
+    const {
+        CIX_SHLDR_STOCK_OWNER_NM,
+        CIX_SHLDR_STOCK_NOMINAL,
+        CIX_SHLDR_STOCK_OWNERSHIP,
+        CIX_SHLDR_RBA_SIGN1,
+        CIX_SHLDR_STOCK_ID_NO,
+        CIX_SHLDR_STOCK_ID_TP,
+        CIX_SHLDR_STOCK_END_ID_DT,
+        CIX_SHLDR_STOCK_CIX_NO,
+        CIX_SHLDR_STOCK_OWNER_TP,
+        CIX_SHLDR_STOCK_GENDER,
+        CIX_SHLDR_STOCK_ADDRESS,
+        CIX_SHLDR_STOCK_TOWN,
+        CIX_SHLDR_STOCK_VILAGE,
+        CIX_SHLDR_STOCK_DATI_II,
+        CIX_SHLDR_STOCK_CITY_NM,
+        CIX_SHLDR_STOCK_PEP
+    } = req.body
+    const data = {
+        CIX_SHLDR_STOCK_OWNER_NM,
+        CIX_SHLDR_STOCK_NOMINAL,
+        CIX_SHLDR_STOCK_OWNERSHIP,
+        CIX_SHLDR_RBA_SIGN1,
+        CIX_SHLDR_STOCK_ID_NO,
+        CIX_SHLDR_STOCK_ID_TP,
+        CIX_SHLDR_STOCK_END_ID_DT,
+        CIX_SHLDR_STOCK_CIX_NO,
+        CIX_SHLDR_STOCK_OWNER_TP,
+        CIX_SHLDR_STOCK_GENDER,
+        CIX_SHLDR_STOCK_ADDRESS,
+        CIX_SHLDR_STOCK_TOWN,
+        CIX_SHLDR_STOCK_VILAGE,
+        CIX_SHLDR_STOCK_DATI_II,
+        CIX_SHLDR_STOCK_CITY_NM,
+        CIX_SHLDR_STOCK_PEP
+    };
+    console.log(data, '<-----')
+
+    res.status(200).json({message: "response data"});
+})
+
 
 
 module.exports = router
