@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "version": "1.0.0",
-    "title": "REST API",
+    "title": "CASH",
     "description": ""
   },
   "servers": [
@@ -651,7 +651,8 @@
             "schema": {
               "type": "string",
               "example": "Basic gp9HjjEj813Y9JGoqwOeOPWbnt4CUpvIJbU1mMU4a11MNDZ7Sg5u9a"
-            }
+            },
+            "description": "Basic Auth yang terdiri dari client name dan client secret"
           }
         ],
         "responses": {
@@ -666,7 +667,9 @@
                 "type": "object",
                 "properties": {
                   "grant_type": {
-                    "example": "client_credentials"
+                    "example": "client_credentials",
+                    "type": "string",
+                    "description": "Isi dengan 'client_credentials'"
                   }
                 }
               }
