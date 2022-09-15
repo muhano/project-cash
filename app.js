@@ -5,7 +5,7 @@ const swaggerUi = require('swagger-ui-express')
 const swaggerFile = require('./swagger_output.json')
 const router = require('./routes')
 
-const port = 3000
+const port = 3005
 
 app.use(cors());
 app.use(express.json());

@@ -1,0 +1,682 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "version": "1.0.0",
+    "title": "CASH",
+    "description": ""
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000/"
+    }
+  ],
+  "paths": {
+    "/individual-inquiry": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "CIX_BASE_CIX_NO": {
+                    "type": "string",
+                    "description": "CIF No",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_STS": {
+                    "type": "string",
+                    "description": "Customer Sts",
+                    "example": "string"
+                  },
+                  "CIX_BASE_CIX_CD": {
+                    "type": "string",
+                    "description": "Customer Type",
+                    "example": "string"
+                  },
+                  "CIX_BASE_CUST_HNM": {
+                    "type": "string",
+                    "description": "Complete Name",
+                    "example": "string"
+                  },
+                  "CIX_BASE_ID_NO": {
+                    "type": "string",
+                    "description": "ID Number",
+                    "example": "string"
+                  },
+                  "CIX_BASE_SEX_CD": {
+                    "type": "string",
+                    "description": "Gender",
+                    "example": "string"
+                  },
+                  "CIX_BASE_BIRTH_DT": {
+                    "type": "string",
+                    "description": "Date of Birth",
+                    "example": "string"
+                  },
+                  "CIX_BASE_ADDR_HNM_1": {
+                    "type": "string",
+                    "description": "Alamat ID",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_RT": {
+                    "type": "string",
+                    "description": "RT",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_RW": {
+                    "type": "string",
+                    "description": "RW",
+                    "example": "string"
+                  },
+                  "CIX_BASE_POST_NO": {
+                    "type": "string",
+                    "description": "Kode Pos",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_PROVINCE_CD": {
+                    "type": "string",
+                    "description": "Provinsi",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_DATI_II": {
+                    "type": "string",
+                    "description": "DATI II",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_TOWN_TP": {
+                    "type": "string",
+                    "description": "Kelurahan",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_VILAGE_TP": {
+                    "type": "string",
+                    "description": "Kecamatan",
+                    "example": "string"
+                  },
+                  "CIX_BASE_CTRY_CD": {
+                    "type": "string",
+                    "description": "Kewarganegaraan",
+                    "example": "string"
+                  },
+                  "CIX_BASE_MARRIAGE_YN": {
+                    "type": "string",
+                    "description": "Marital Status",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_SPOUSE_NAME": {
+                    "type": "string",
+                    "description": "Spouse Name",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_SPOUSE_ID_NO": {
+                    "type": "string",
+                    "description": "Spouse ID No",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_SPOUSE_BIRTH_DT": {
+                    "type": "string",
+                    "description": "Spouse Birth Date",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_SEP_ASSET_AGR_YN": {
+                    "type": "string",
+                    "description": "Separate Asset Agreement",
+                    "example": "string"
+                  },
+                  "CIX_BASE_TEL_NO": {
+                    "type": "string",
+                    "description": "Phone Number",
+                    "example": "string"
+                  },
+                  "CIX_BASE_EMAIL_ADDR": {
+                    "type": "string",
+                    "description": "E-Mail",
+                    "example": "string"
+                  },
+                  "CIX_BASE_MOBILE_NO": {
+                    "type": "string",
+                    "description": "Mobile Phone",
+                    "example": "string"
+                  },
+                  "CIX_BASE_MOBILE_NO_2": {
+                    "type": "string",
+                    "description": "Mobile Phone 2",
+                    "example": "string"
+                  },
+                  "CIX_BASE_MOBILE_NO_3": {
+                    "type": "string",
+                    "description": "Mobile Phone 3",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_REL_PARTY_CD": {
+                    "type": "string",
+                    "description": "Related Party",
+                    "example": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/corporate-inquiry": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "CIX_BASE_CIX_NO": {
+                    "type": "string",
+                    "description": "CIF No",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_STS": {
+                    "type": "string",
+                    "description": "Customer Sts",
+                    "example": "string"
+                  },
+                  "CIX_BASE_CUST_HNM": {
+                    "type": "string",
+                    "description": "Complete Name",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_NPWP": {
+                    "type": "string",
+                    "description": "NPWP",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_UPJO_CD_ANTASENA": {
+                    "type": "string",
+                    "description": "Line of Business",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_EST_NO": {
+                    "type": "string",
+                    "description": "Deed of Estble No",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_RCNT_EST_NO": {
+                    "type": "string",
+                    "description": "Deed Rcnt Chng No",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_EST_DT": {
+                    "type": "string",
+                    "description": "Deed of Estble Date",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_RCNT_EST_DT": {
+                    "type": "string",
+                    "description": "Deed Rcnt Chng Date",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_EST_END_DT": {
+                    "type": "string",
+                    "description": "BOD Term End Dt",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_EST_NOTA": {
+                    "type": "string",
+                    "description": "Deed Rcnt Chng Nota",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_RCNT_EST_NOTA": {
+                    "type": "string",
+                    "description": "Deed Rcnt Chng Nota",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_ESTB_PLAC": {
+                    "type": "string",
+                    "description": "Deed of Estble Place",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_CLAC_YM": {
+                    "type": "string",
+                    "description": "Fiscal Dt",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_JTC_MIN_NO": {
+                    "type": "string",
+                    "description": "Dcr of Just Minist No",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_JTC_MIN_DT": {
+                    "type": "string",
+                    "description": "Date",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_ASTATE_GZT_NO": {
+                    "type": "string",
+                    "description": "State Gazette No Add",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_ASTATE_GZT_DT": {
+                    "type": "string",
+                    "description": "Date",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_STATE_GZT_NO": {
+                    "type": "string",
+                    "description": "Number",
+                    "example": "string"
+                  },
+                  "CIX_BASE_ADDR_HNM_1": {
+                    "type": "string",
+                    "description": "Company Address",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_DATI_II": {
+                    "type": "string",
+                    "description": "DATI II",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_TOWN_TP": {
+                    "type": "string",
+                    "description": "County",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_PROVINCE_CD": {
+                    "type": "string",
+                    "description": "Province",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_VILAGE_TP": {
+                    "type": "string",
+                    "description": "District",
+                    "example": "string"
+                  },
+                  "CIX_BASE_MAIN_TEL_NO": {
+                    "type": "string",
+                    "description": "Phone Number",
+                    "example": "string"
+                  },
+                  "CIX_BASE_FAX_NO": {
+                    "type": "string",
+                    "description": "Fax Number",
+                    "example": "string"
+                  },
+                  "CIX_BASE_TEL_NO": {
+                    "type": "string",
+                    "description": "Phone Number 1",
+                    "example": "string"
+                  },
+                  "CIX_BASE_TEL_NO2": {
+                    "type": "string",
+                    "description": "Phone Number 2",
+                    "example": "string"
+                  },
+                  "CIX_BASE_POST_NO": {
+                    "type": "string",
+                    "description": "Post Code",
+                    "example": "string"
+                  },
+                  "CIX_BASE_EMAIL_ADDR": {
+                    "type": "string",
+                    "description": "E-Mail",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_CNTCT_PRSN_NM": {
+                    "type": "string",
+                    "description": "Cntct Prsn Name",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_CNTCT_PRSN_TEL_NO": {
+                    "type": "string",
+                    "description": "Cntct Prsn Phone No",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_SIUP_NO": {
+                    "type": "string",
+                    "description": "No. SIUP",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_API_APIT_NO": {
+                    "type": "string",
+                    "description": "No. API/APIT",
+                    "example": "string"
+                  },
+                  "CIX_LRPT_SITU_IUT_NO": {
+                    "type": "string",
+                    "description": "SITU/IUT",
+                    "example": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/management-data": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "CIX_BOD_BOD_NM": {
+                    "type": "string",
+                    "description": "Complete Name",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_POS": {
+                    "type": "string",
+                    "description": "Position Code",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_ID_NO": {
+                    "type": "string",
+                    "description": "ID. Card",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_ID_TP": {
+                    "type": "string",
+                    "description": "ID Type",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_END_ID_DT": {
+                    "type": "string",
+                    "description": "ID Expiry Date",
+                    "example": "string"
+                  },
+                  "CIX_BOD_NPWP": {
+                    "type": "string",
+                    "description": "No. NPWP",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_CIX_NO": {
+                    "type": "string",
+                    "description": "CIF No",
+                    "example": "string"
+                  },
+                  "CIX_BOD_GENDER": {
+                    "type": "string",
+                    "description": "Gender / Category",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_ADDRESS": {
+                    "type": "string",
+                    "description": "Address",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_TOWN": {
+                    "type": "string",
+                    "description": "County",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_VILAGE": {
+                    "type": "string",
+                    "description": "",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_DATI_II": {
+                    "type": "string",
+                    "description": "District",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_CITY_NM": {
+                    "type": "string",
+                    "description": "City Name",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_PROVINCE_CD": {
+                    "type": "string",
+                    "description": "Province",
+                    "example": "string"
+                  },
+                  "CIX_BOD_BOD_PEP": {
+                    "type": "string",
+                    "description": "Watch List Y/N",
+                    "example": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/shareholder-data": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "CIX_SHLDR_STOCK_OWNER_NM": {
+                    "type": "string",
+                    "description": "Name",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_NOMINAL": {
+                    "type": "string",
+                    "description": "Nominal of Share",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_OWNERSHIP": {
+                    "type": "string",
+                    "description": "Ownership(%)",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_RBA_SIGN1": {
+                    "type": "string",
+                    "description": "HR Profile",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_ID_NO": {
+                    "type": "string",
+                    "description": "No. ID",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_ID_TP": {
+                    "type": "string",
+                    "description": "ID Type",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_END_ID_DT": {
+                    "type": "string",
+                    "description": "ID Expiry Date",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_CIX_NO": {
+                    "type": "string",
+                    "description": "CIF Debitur",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_OWNER_TP": {
+                    "type": "string",
+                    "description": "Ownership Type Code",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_GENDER": {
+                    "type": "string",
+                    "description": "Gender / Category",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_ADDRESS": {
+                    "type": "string",
+                    "description": "Address",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_TOWN": {
+                    "type": "string",
+                    "description": "County",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_VILAGE": {
+                    "type": "string",
+                    "description": "District",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_DATI_II": {
+                    "type": "string",
+                    "description": "DATI II",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_CITY_NM": {
+                    "type": "string",
+                    "description": "City Name",
+                    "example": "string"
+                  },
+                  "CIX_SHLDR_STOCK_PEP": {
+                    "type": "string",
+                    "description": "Watch List Y/N",
+                    "example": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/controlling-person": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "CIX_PIC_PIC_NM": {
+                    "type": "string",
+                    "description": "Complete Name",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_ID": {
+                    "type": "string",
+                    "description": "Identity Type",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_ID_NO": {
+                    "type": "string",
+                    "description": "No Identity",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_END_ID_DT": {
+                    "type": "string",
+                    "description": "ID Expiry Date",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_POB": {
+                    "type": "string",
+                    "description": "Place of Birth",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_DOB": {
+                    "type": "string",
+                    "description": "Date of Birth",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_ADDRESS": {
+                    "type": "string",
+                    "description": "Address",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_CTRY_CD": {
+                    "type": "string",
+                    "description": "Country",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_CTRY_YRDK_CD": {
+                    "type": "string",
+                    "description": "Yuridiksi Country",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_TIN": {
+                    "type": "string",
+                    "description": "No. TIN",
+                    "example": "string"
+                  },
+                  "CIX_PIC_PIC_PEP": {
+                    "type": "string",
+                    "description": "Watch List Y/N",
+                    "example": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "example": "Basic gp9HjjEj813Y9JGoqwOeOPWbnt4CUpvIJbU1mMU4a11MNDZ7Sg5u9a"
+            },
+            "description": "Basic Auth yang terdiri dari client name dan client secret"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "grant_type": {
+                    "example": "client_credentials",
+                    "type": "string",
+                    "description": "Isi dengan 'client_credentials'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
